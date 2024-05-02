@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reproductor</title>
+	<link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+
+	<script type="text/javascript" src="bootstrap5/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/0f25780317.js" crossorigin="anonymous"></script>
+
+	<!--llamando librerias de control de audio-->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.audioControls.min.js"></script>
+
+	<!-- llamando libreria propia de JS-->
+	<script src="js/funciones.js"></script>
+
+
+	<style>
+		body
+		{
+			background: #64DAED;
+		}
+		.botoncabecera
+		{
+			background-color: #1D6E7C;
+			color: white;
+			border-radius: 20px;
+		}
+		.mas
+		{
+			background: #019BB6;
+			border-radius: 30px;
+		}
+		.portada
+		{
+			background: #BFE1DD;
+			border-radius: 20px;
+		}
+		.canciones
+		{
+			background: #BFE1DD;
+			border-radius: 20px;
+		}
+		.texto
+		{
+			color: #05445E;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container ">
+		<section class="row">
+			<main class="col portada mt-4 col-md-6 col-xxl-6 col-xs-12 col-s-12">
+				<div class="row justify-content-between">
+
+					<div class="col-auto botoncabecera mt-2">
+						<div class="botones">
+							<i class="fa-solid fa-arrow-left"></i>
+						</div>
+					</div>
+
+					<div class="col-auto botoncabecera mt-2">
+						<p class="d-none d-md-block">Reproduciendo ahora</p>
+						<p class="d-block d-md-none">Ahora</p>
+					</div>
+
+					<div class="col-auto botoncabecera mt-2">
+						<div class="botones">
+							<i class="fa-solid fa-bars"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="row text-center mt-3">
+					<div class="col"><img src="portada.jpg" width="150px" class="rounded-circle"></div>
+				</div>
+
+				<div class="row">
+					<div class="col text-center">
+						<h2>Kygo</h2>
+						<h3>Cloud nine</h3>
+					</div>
+				</div>
+
+				<div class="row justify-content-between botoncabecera ms-1 ">
+							<span class="col-3 nombremp3" ></span>
+							<span class="col-3 text-end audioTime" data-attr="timer">Tiempo</span>
+				</div>
+
+				
+
+				<div class="progress mt-4" role="progressbar" aria-label="Info example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" >
+				  <div class="progress-bar bg-dark updateProgress" ></div>
+				</div>
+
+		
+
+				<div class="row mt-2 justify-content-center">
+					<div class="col-auto">
+						<i class="fa-solid fa-circle-arrow-left"></i>
+					</div>
+					<div class="col-auto">
+						<i class="fa-solid fa-play"></i>
+					</div>
+					<div class="col-auto">
+						<i class="fa-solid fa-circle-arrow-right"></i>
+					</div>
+				</div>
+			</main>
+
+			<aside class="col-md-6 canciones col-xxl-6 col-xs-12 col-s-12 mt-4">
+						<ul class="list-group list-group-flush mt-5 playlist">
+						  <li class="" data-src="canciones/Kygo - Raging feat. Kodaline (Cover Art) [Ultra Music].mp3">
+						  	<a href="#" class="texto">Raging - Kygo </a>
+						  </li>
+						  <li class="" data-src="canciones/Kygo - Stole The Show Feat. Parson James (Official Audio).mp3">
+						  	<a href="#" class="texto">Stole the Show - Kygo</a>
+						  </li>
+						  <li class="" data-src="canciones/Kygo feat. Will Heard - Nothing Left (Cover Art).mp3">
+						  	<a href="#" class="texto">Nothing Left - Kygo</a>
+						  </li>
+						  <li class="" data-src="canciones/Kygo, Donna Summer - Hot Stuff (Audio).mp3">
+						  	<a href="#" class="texto">Hot Stuff - Kygo</a>
+						  </li>
+						  <li class="" data-src="canciones/Younger (Kygo Remix) (Audio).mp3">
+						  	<a href="#" class="texto">Younger - Kygo</a>
+						  </li>
+						</ul>
+
+						
+
+						
+			</aside>
+
+
+			<!--<button class="btn btn-primary">Bootstrap</button>
+			<i class="fa-solid fa-arrow-left"></i>-->
+		</section>
+	</div>
+
+
+
+
+
+	<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
